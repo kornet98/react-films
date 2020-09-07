@@ -26,15 +26,24 @@ const StyledLink = styled(Link)`
 	padding: 8px;
 	text-decoration: none;
   text-align: center;
+  &:hover{
+    box-shadow: 0px 0px 25px 0px rgba(223,105,26,1);
+  }
   @media (max-width: 576px) {
     width: 100px;
   }
 `;
 const ToggleButton = styled.button`
   background: ${({ theme }) => theme.background};
+  border: none;
+  outline: none;
   color: ${({ theme }) => theme.text};
   text-transform: uppercase;
   width: 150px;
+  &:hover{
+    background: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.background};
+  }
   @media (max-width: 576px) {
     width: 100px;
   }
