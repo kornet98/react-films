@@ -47,16 +47,16 @@ function App() {
             <Container>
               <Header toggle={themeToggler} side={isLightMode} />
               <Switch>
-                <Route path="/" exact>
+                <Route path="/react-films/" exact>
                   <People />
                 </Route>
-                <Route path="/people/:personId" exact>
+                <Route path="/react-films/people/:personId" exact>
                   <Person />
                 </Route>
-                <Route path="/films/:filmId" exact>
+                <Route path="/react-films/films/:filmId" exact>
                   <SingleFilm />
                 </Route>
-                <Route path="/search/:searchTerm" exact component={SearchPage}>
+                <Route path="/react-films/search/:searchTerm" exact component={SearchPage}>
                 </Route>
               </Switch>
             </Container>

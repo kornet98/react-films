@@ -37,7 +37,7 @@ const StyledLink = styled(Link)`
 function PersonListItem({ name, id }) {
   return (
     <PersonItem>
-      <StyledLink to={`/people/${id}`} key={id}>
+      <StyledLink to={`/react-films/people/${id}`} key={id}>
         <Photo>
         </Photo>
         <Name>{name}</Name>

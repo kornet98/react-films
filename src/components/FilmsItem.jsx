@@ -54,7 +54,7 @@ const Title = styled.h3`
 function FilmsItem({ title, url }) {
   return (
     <FilmItem>
-      <StyledLink to={`/films/${getIdFromUrl(url)}`} key={getIdFromUrl(url)}>
+      <StyledLink to={`/react-films/films/${getIdFromUrl(url)}`} key={getIdFromUrl(url)}>
         <Poster>
         </Poster>
         <Title>{title}</Title>

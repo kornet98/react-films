@@ -42,7 +42,7 @@ const SearchForm = () => {
   }
 
   const handleSubmit = event => {
-    history.push(`/search/${searchTerm}`);
+    history.push(`/react-films/search/${searchTerm}`);
     setSearchTerm('');
     event.preventDefault();
   }

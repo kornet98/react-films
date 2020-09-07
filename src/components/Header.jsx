@@ -44,7 +44,7 @@ function Header({ toggle, side }) {
   return (
     <HeaderComponent>
       <Navigation>
-        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/react-films/">Home</StyledLink>
         <ToggleButton onClick={toggle}>{!side ? 'Dark' : 'Light'} side</ToggleButton>
       </Navigation>
       <SearchForm />
